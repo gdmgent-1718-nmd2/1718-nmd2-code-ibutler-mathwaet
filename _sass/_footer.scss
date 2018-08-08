@@ -1,0 +1,18 @@
+.social-iconsfooter{
+    a {
+        max-width: 15px;
+        svg {
+            width: $logo-width;
+            path {
+                fill:blueviolet;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    fill: $brand-hover-color;
+                }
+            }
+        }
+    }
+}

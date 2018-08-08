@@ -1,0 +1,52 @@
+.social-icons {
+    a {
+        max-width: 20px;
+        svg {
+            width: $logo-width;
+            path {
+                fill:blueviolet;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    fill: $brand-hover-color;
+                }
+            }
+        }
+    }
+}
+
+/*CONTACTPAGINA*/
+
+.gegevens_contact{
+    p{
+        display:inline-table;
+    }
+}
+
+/*RESERVEREN*/
+
+.garanties{
+    ul{
+        list-style-type:none;
+        padding-left:0px;
+    }
+    img{
+        padding-right:20px;
+    }
+}
+
+.review{
+    text-align: center;
+}
+
+/*BETALING*/
+
+.list-group{
+    li{
+        p{
+            display:inline;
+        }
+    }
+}

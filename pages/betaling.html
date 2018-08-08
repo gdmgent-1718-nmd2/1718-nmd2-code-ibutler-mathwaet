@@ -1,0 +1,202 @@
+---
+layout   : default
+permalink: /betaling
+# Custom Page Variables
+# ─────────────────────
+title: Betaal Gegevens
+---
+
+<body>
+    <wrapper>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">home</a></li>
+                            <li class="breadcrumb-item"><a href="reserveren.html">reserveren</a></li>
+                            <li class="breadcrumb-item"><a href="gegevens.html">gegevens</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">betaling</li>
+                        </ol>
+                    </nav>   
+                </div>
+            </div>   
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center"> 
+                    <h1>Reserveren</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class=" progress">
+                        <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="3"66aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-12 col-md-4 order-md-last">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span>Mevr. Mathilde Waeterloos<br>Engelsenlaan 256<br>9600 RONSE<br>België</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h5 class="mb-1">Vertrek</h5>
+                                <small>14/12/2018</small>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Terugkomst</h5>
+                                <small>19/12/2018</small>
+                            </div>
+                            <div>
+                                <p class="text-muted">€ 500</p>
+                            </div>
+                        </li>    
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <div>
+                                    <span><img src="{{ site.baseurl }}/images/icon_vinkje.png" alt="icon vinkje" height="10"><p>Verzorging huisdier</p></span> 
+                                </div>
+                                <div>
+                                    <span><img src="{{ site.baseurl }}/images/icon_vinkje.png" alt="icon vinkje" height="10"><p>Volle koelkast</p></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <span><p class="text-muted">€ 50</p></span>
+                                </div>
+                                <div>
+                                    <span><p class="text-muted">€ 50</p></span>
+                                </div>
+                            </div>
+                        </li>       
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <span><p>Totaal</p></span> 
+                            </div>
+                            <div>
+                                <p class="text-muted">€ 600</p>
+                            </div>     
+                        </li>                  
+                    </ul>
+                </div>
+            
+                <div class="col-12 col-md-6">
+                    <div>
+                        <h3>Gegevens</h3>
+                    </div>
+                    <form>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">
+                                <img src="{{ site.baseurl }}/images/bancontact_kleur.png" alt="bancontact" height="40"><strong>Bancontact</strong> - gratis
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">
+                                <img src="{{ site.baseurl }}/images/visa_kleur.png" alt="bancontact" height="10"><strong>Creditcard</strong> - gratis
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">
+                                <img src="{{ site.baseurl }}/images/paypal_kleur.png" alt="bancontact" height="15"><strong>Paypal</strong> - gratis
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <label for="inputName">Naam op kaart*</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 col-md-6">
+                                <label for="inputName2">Kaartnummer*</label>
+                                <input type="text" class="form-control" id="inputName2">
+                                <small id="emailHelp" class="form-text text-muted">De cijfers op de voorzijde van de kaart, bijvoorbeeld 67031234567890123.</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-4 col-md-2">
+                                <label class="d-block" for="inputDate">Vervaldatum*</label>
+                                <select id="inputDate" class="form-control">
+                                    <option selected>mm</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <small id="emailHelp" class="form-text text-muted">Vaak op de kaart aangeduid met "Valid thru".</small>
+                            </div>
+                            <div class="form-group col-4 col-md-2">
+                                <label for="inputDate"></label>
+                                <select id="inputDate" class="form-control">
+                                    <option selected>jjjj</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center justify-content-md-start">
+                    <a role="button" class="btn btn-outline-primary btn-lg button-win" data-toggle="modal" data-target="#exampleModal">Betalen</a>
+                </div>
+                <div class="col-12 d-flex justify-content-center justify-content-md-start">
+                    <a role="button" class="btn btn-outline-primary btn-lg button-win" href="gegevens.html">Terug</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog-centered modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Betalingsbevestiging</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Dank u, we hebben uw reservering goed ontvangen.</p>
+                                <p>U kan weldra een overzicht van uw bestelling en verdere afspraken in uw mailbox terugvinden.</p>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <a role="button" class="btn btn-outline-primary btn-lg button-win button_modal" data-dismiss="modal">Sluiten</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+            </div>
+        </section>
+    </wrapper>
+</body>
