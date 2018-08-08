@@ -9,7 +9,7 @@
 //
 
 $indigo:  #6610f2;
-$primary: $indigo;
+$primary: #736DFF;
 
 // Fonts
 //
@@ -17,4 +17,5 @@ $primary: $indigo;
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
-$font-family-base: Merriweather, serif;
+$font-family-base: 'Source Sans Pro', sans-serif;
+$headings-font-family:'cocogoose', sans-serif;
