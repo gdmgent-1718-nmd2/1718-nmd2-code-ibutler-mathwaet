@@ -15,7 +15,7 @@ title: Home
                         <img class="logo_happyhouse_banner" src="{{ site.baseurl }}/images/logo_happyhouse_wit.svg" alt="logo HappyHouse">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row_button_icons">
                     <div class="col-md-4">           
                     </div>
                     <div class="col-12 col-md-4 d-flex justify-content-center">
@@ -51,7 +51,7 @@ title: Home
             <div class="row">
                 <div class="col">
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
+                        <ol class="breadcrumb" id="breadcrumb_home">
                             <li class="breadcrumb-item active" aria-current="page">home</li>
                         </ol>
                     </nav>   
@@ -64,26 +64,26 @@ title: Home
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <img src="{{ site.baseurl }}/images/mozaiek_deel1.svg" alt="logominuten">
+            <div class="row row_mozaiek">
+                <div class="col-6 col-md-3 mozaiek">
+                    <img src="{{ site.baseurl }}/images/mozaiek_deel1.svg" alt="afbeelding">
                 </div>
-                <div class="col-6 col-md-3">
-                    <img src="{{ site.baseurl }}/images/mozaiek_deel2.svg" alt="logominuten">
+                <div class="col-6 col-md-3 mozaiek">
+                    <img src="{{ site.baseurl }}/images/mozaiek_deel2.svg" alt="afbeelding">
                 </div>
-                <div class="col-6 col-md-3 order-md-last">
-                    <img src="{{ site.baseurl }}/images/mozaiek_deel3.svg" alt="logominuten">
+                <div class="col-6 col-md-3 mozaiek order-md-last">
+                    <img src="{{ site.baseurl }}/images/mozaiek_deel3.svg" alt="afbeelding">
                 </div>
-                <div class="col-6 col-md-3">
-                    <img src="{{ site.baseurl }}/images/mozaiek_deel4.svg" alt="logominuten">
+                <div class="col-6 col-md-3 mozaiek">
+                    <img src="{{ site.baseurl }}/images/mozaiek_deel4.svg" alt="afbeelding">
                 </div>
             </div>
 
     
-            <div class="row d-flex justify-content-md-center">    
+            <div class="row d-flex justify-content-md-center tekstblok">    
                 <div class="col-12 col-md-4">
                     <h3 class="inleiding">
-                        Happy House zorgt dat jij met een gerust hart weg kan van huis.
+                        <span class="happyhouse_blauw">Happy House</span> zorgt dat <br> jij met een gerust hart<br> weg kan van huis.
                     </h3>
                     <p class="leestekst"> 
                         Vertrek je op reis of ga je voor bepaalde tijd weg van huis, 
@@ -106,8 +106,11 @@ title: Home
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center">
-                <a role="button" class="btn btn-outline-primary btn-lg button-win" href="reserveren.html">Reserveer</a>
+            <div class="row">
+                <div class="container d-flex justify-content-center">
+                     <a role="button" class="btn btn-outline-primary btn-lg button-win button_zwart" href="reserveren.html">Reserveer</a>
+                </div>
+               
             </div>
 
         </section>

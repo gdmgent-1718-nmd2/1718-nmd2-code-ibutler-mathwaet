@@ -2,6 +2,15 @@
 //
 // Put variables overrides here.
 //
+.navbar-light {
+    .nav-link {
+      color:red;
+
+     &:hover-focus {
+        color: blue;
+      }
+    }
+}
 // See _vendor/bootstrap/scss/_variables.scss
 
 //

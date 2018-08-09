@@ -1,18 +1,144 @@
-.social-iconsfooter{
-    a {
-        max-width: 15px;
-        svg {
-            width: $logo-width;
-            path {
-                fill:blueviolet;
+.footer{
+    background-color:#F7F7F7;
+        .firstrow_footer{
+            padding-top:50px;
+                .logo_happyhouse_footer{
+                    margin-bottom:40px;
+                    height:60px;
+                }
+                .linkpages{
+                    margin-bottom:30px;  
+                        a{
+                        font-family: 'cocogoose', sans-serif;
+                        font-weight: 400;
+                        font-size:14px;
+                        }
+                        a:hover{
+                            text-decoration:none;
+                            color:#BCB9F7;
+                        }
+                        a:active{
+                            text-decoration:none;
+                            color:#BCB9F7;
+                        }
+                }
+        }
+        .gegevensfooter{
+            text-align:center;
+            color:$primary;
+            margin-bottom:20px;
+        }
+        .copyright{
+            font-size:13px;
+            color:#B1AEFF;
+            margin-top:30px;
+            padding-bottom:15px;
+        }
+        .betaalmiddelen_footer{
+            img{
+                padding-left:10px;
+            }
+            .bancontact{
+                height:23px;
+            }
+            .visa{
+                height:13px;
+            }
+            .paypal{
+                height:13px;
             }
         }
-        &:hover {
-            svg {
-                path {
-                    fill: $brand-hover-color;
-                }
+}
+
+.secondrow-footer{
+    &::after{
+        content:"";
+        width:100%;
+        height:1px;
+        background-color:#E6E6E6;
+    }
+}
+
+.social-iconsfooter{
+    margin-bottom:30px;
+    a{
+        max-width: 30px;
+        padding:2px;
+        svg{
+            width:40px;
+            path{
+                fill:$primary;
+            }
+        }
+    }
+    a:active{
+        svg{
+            path{
+                fill:#BCB9F7;
             }
         }
     }
 }
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+    .footer{
+        background-color:#F7F7F7;
+            .firstrow_footer{
+                padding-top:60px;
+                margin-bottom:40px;
+                    .logo_happyhouse_footer{
+                        margin-bottom:0px;
+                            img{
+                                margin:0px;
+                                height:60px;  
+                            } 
+                    }
+                    .linkpages{
+                        margin-bottom:0px;
+                            a{
+                                font-size:12px;  
+                            }
+                            a:active{
+                                color:$primary;
+                            }
+                    } 
+            }
+            .gegevensfooter{
+                text-align:left;
+            }               
+    }   
+
+    .social-iconsfooter{
+        margin-bottom:0px;
+        }
+        a:hover{
+            svg{
+                path{
+                    fill:#BCB9F7;
+                }
+            }
+        }
+        a:active{
+            svg{
+                path{
+                    fill:$primary;
+                }
+            }
+        }
+    }
+    
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
