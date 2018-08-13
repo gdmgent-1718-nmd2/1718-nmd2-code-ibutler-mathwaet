@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://www.dafont.com/cocogoose.font');
+@font-face {font-family:"COCOGOOSE";
+            src:url("Cocogoose_trial.eot?") format("eot"),
+           /*url("Cocogoose_trial.woff") format("woff"),
+            url("Cocogoose_trial.ttf") format("truetype"),*/
+            url("Cocogoose_trial.svg#COCOGOOSE") format("svg");}
 
 
 /*----------------- HOME ------------------*/
@@ -88,7 +93,7 @@
     margin-bottom:70px;
     background-color:#F2F2F2;
     .breadcrumb-item{
-        font-family:'cocogoose', sans-serif;
+        font-family:'COCOGOOSE', sans-serif;
         color:white;
         font-size:13px; 
             a{
@@ -113,7 +118,7 @@
 
 h1{
     font-size:20px;
-    text-transform: uppercase;
+    text-transform:uppercase;
     font-weight: 400;
     margin-bottom:40px;
 }
@@ -161,7 +166,7 @@ h1{
     padding:17px;
     margin-bottom:110px;
 
-    font-family: 'cocogoose', sans-serif;
+    font-family: 'COCOGOOSE', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color: black;
@@ -211,7 +216,7 @@ form{
     padding:17px;
     margin-bottom:100px;
 
-    font-family: 'cocogoose', sans-serif;
+    font-family: 'COCOGOOSE', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color:white;
@@ -283,7 +288,7 @@ h3{
         text-align: center;
         color: white;
         .review_titel{
-            font-family: 'cocogoose',sans-serif;
+            font-family: 'COCOGOOSE',sans-serif;
             font-size:16px;
             text-transform: uppercase;
             margin-bottom:5px;
