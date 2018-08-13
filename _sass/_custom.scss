@@ -2,21 +2,22 @@
 @import url('https://www.dafont.com/cocogoose.font');
 
 
-/*HOME*/
+/*----------------- HOME ------------------*/
+.section{
+    position:relative;
+    z-index:1;
+}
 
 .achtergrond_blauw{
     background-color:$primary;
     width:100vw;
     height:100vh;
-    z-index:-2;
-    position:relative;
 }
 
 .logo_happyhouse_banner{
     width:85%;
     margin-top:180px;
     position:fixed;
-    z-index:-1;
 }
 
 .row_button_icons{
@@ -25,7 +26,6 @@
 
 .button_wit{
     background-color:white;
-    border-width: 2px;
     width:100%;
     height:55px;
     border-radius: 40px;
@@ -90,15 +90,17 @@
     .breadcrumb-item{
         font-family:'cocogoose', sans-serif;
         color:white;
-        font-size:15px; 
+        font-size:13px; 
             a{
                 color:white;   
             }
             a:active{
-                color:#D9D9D9;
+                color:#DDDDDD;
+                text-decoration:none;
             }
             a:hover{
-                color:#D9D9D9;
+                color:#DDDDDD;
+                text-decoration:none;
             }
 
     }
@@ -176,42 +178,245 @@ h1{
 
 
 
-/*CONTACTPAGINA*/
+/*----------------- CONTACT ------------------*/
+
+.row_gegevens_contact{
+    margin-bottom:50px;
+}
 
 .gegevens_contact{
     p{
         display:inline-table;
+        padding-left:25px;
+        font-size: 18px;
     }
+}
+
+form{
+    margin-bottom:40px;
+        label{
+            margin-bottom:5px;
+        }
+        .form-control{
+            margin-bottom:20px;
+        }
+   
+}
+
+.button_blauw{
+    background-color:$primary;
+    width:100%;
+    height:55px;
+    border-radius: 40px;
+    padding:17px;
+    margin-bottom:100px;
+
+    font-family: 'cocogoose', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:white;
+
+        &:active{
+            background-color:white !important;
+            border-width:2px !important;
+            border-color:$primary !important;
+            color:$primary !important;
+        }
+        &:hover{
+            background-color:white !important;
+            border-width:2px !important;
+            border-color:$primary !important;
+            color:$primary !important;
+        }
+}
+
+.img_kaart{
+    width:100vw;
 }
 
 
 
+/*-----------------RESERVEREN------------------*/
 
-/*RESERVEREN*/
+.reserveren_leestekst{
+    font-size: 17px;
+    margin-bottom:40px;
+}
+
+h3{
+    font-size:17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom:10px;
+    color:$primary;
+    margin-bottom:20px;
+}
 
 .garanties{
+    margin-bottom:40px;
     ul{
         list-style-type:none;
         padding-left:0px;
     }
     img{
         padding-right:20px;
+        height:15px;
+        margin-top:5px;
+    }
+    p{
+        font-size:17px;
+        margin-bottom:10px;
     }
 }
 
-.review{
-    text-align: center;
+.row_reviews{
+    padding-top:70px;
+    padding-bottom:70px;
 }
 
-/*BETALING*/
-
-.list-group{
-    li{
-        p{
-            display:inline;
+.container_reviews{
+    background-color:#EBEBEB;
+    .review:first-of-type{
+    margin-bottom:60px;
+    }
+    .review{
+        text-align: center;
+        color: white;
+        .review_titel{
+            font-family: 'cocogoose',sans-serif;
+            font-size:16px;
+            text-transform: uppercase;
+            margin-bottom:5px;
+        }
+        .review_tekst{
+            font-size:16px;
+            margin-bottom:10px;
+        }
+        .review_img{
+            height:20px;
         }
     }
 }
+
+/*----------------- GEGEVENS ------------------*/
+
+.progress{
+    margin-top:-10px;
+    margin-bottom:60px;
+    background-color:#F6F6F6;
+    height:18px;
+    .progress-bar{
+        background-color:$primary;
+    }
+}
+
+h2{
+    font-size:17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom:10px;
+    margin-bottom:10px; 
+}
+
+.row_een{
+    margin-bottom:50px;
+    
+        &::after{
+            content:"";
+            width:100%;
+            height:1px;
+            background-color:#D3D3D3;
+            margin-top:10px;
+        }
+        .tekst_verplichtinvullen{
+            margin-bottom:40px;
+        }
+        form{
+            .form-row{
+                margin-bottom:10px;
+            }
+
+            .custom-checkbox{
+                margin-bottom:10px;
+            }  
+        } 
+}
+
+.row_twee{
+    p{
+        margin-bottom:10px;
+    }
+
+    .checkboxes_geslacht{
+        margin-bottom:30px;
+        .custom-control-inline{
+            padding-right:10px;
+        }
+    }
+    .form-group{
+        margin-bottom:3px;
+    }
+    .custom-checkbox{
+        margin-bottom:10px;
+    }  
+}
+
+.buttons_gegevens{
+    .button_blauw{
+        margin-bottom: 20px;
+        margin-top:40px;
+    }
+    .button_zwart{
+        
+    }
+}
+
+
+/*----------------- BETALING ------------------*/
+
+.list-group{
+    margin-bottom:50px;
+    .list-group-item{
+        color:#7C7C7C;
+        background-color:#F6F6F6;  
+        border-color:white;
+        padding-top:15px;
+        padding-bottom:15px;
+            h5{
+                font-size:15px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            small{
+                font-size:15px;
+            }
+            .text-muted{
+                font-size:19px;
+            }
+            p{
+                margin-bottom:0px;
+            }
+            h4{
+                font-size:17px;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom:0px;
+            }
+    }
+}
+
+.list-group-item-vinkjes{
+    span{
+        img{
+            height:12px;
+        }
+        p{
+            display:inline;
+            padding-left:15px;
+        }   
+    }  
+}
+
 
 
 
@@ -266,9 +471,6 @@ h1{
     .breadcrumb{
         height:40px;
         margin-bottom:80px;
-        .breadcrumb-item.active{
-            font-size:13px;
-        }
     }
 
     h1{
@@ -301,7 +503,81 @@ h1{
     }
 
 
+/*----------------- CONTACT ------------------*/
+
+    form{
+        margin-bottom:20px;
+        label{
+            font-size:15px;
+        }
+    }
+
+    .button_blauw{
+        margin-bottom:120px;
+        width:290px;
+        height:47px;
+        font-size:12px;
+        padding:14px;
+
+        &:active{
+            background-color:$primary !important;
+            color:white !important;
+        }
+    }
+
+    .gegevens_contact{
+        p{
+            font-size: 16px;
+        }
+    }
+
+
+/*----------------- RESERVEREN ------------------*/
+
+    .reserveren_leestekst{
+        font-size: 16px;
+    }
+
+    .container_reviews{
+        .review:first-of-type{
+        margin-bottom:0px;
+        }
+        .review{
+            .review_tekst{
+                font-size:15px;
+            }
+        }
+    }
+
+    .row_reviews{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
+
+    .row_een{
+        margin-bottom:60px;
+        
+            &::after{
+                content:"";
+                width:100%;
+                height:1px;
+                background-color:#E2E2E2;
+                margin-top:30px;
+            }
+    }
+
+
+/*----------------- GEGEVENS ------------------*/
+
+    .progress{
+        margin-top:-20px;
+        margin-bottom:90px;
+        height:20px;
+    }
+
+
 }
+
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}

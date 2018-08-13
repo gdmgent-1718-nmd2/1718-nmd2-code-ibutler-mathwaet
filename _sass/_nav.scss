@@ -3,13 +3,31 @@
     z-index:2;
 }
 
+
+
 .nav-item{
-    font-family: 'cocogoose', sans-serif;
+    font-family:'source sans pro', sans-serif;
     color:$primary;
-    font-size:15px;
+    font-size:17px;
     margin-left:30px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.nav-item:first-of-type{
     padding-top:25px;
-    padding-bottom:25px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:$primary;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#D1CFFF;
+}
+
+.navbar-light .navbar-nav .nav-link:active{
+    color:#D1CFFF;
 }
 
 
@@ -18,19 +36,26 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+
     .navbar{
-        height:60px;
+        height:70px;
     }
-
-    .nav-item{
-        font-size:12px;
+    .nav-item {
+        font-size:17px;
         margin:0px;
-        padding:0px;
     }
 
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-left:30px;
+    }
 
+    .navbar-collapse{
+        padding-top:20px;
+    }
 
-
+    .navbar-light .navbar-nav .nav-link:active{
+        color:$primary;
+    }
 }
 
 // Large devices (desktops, 992px and up)
