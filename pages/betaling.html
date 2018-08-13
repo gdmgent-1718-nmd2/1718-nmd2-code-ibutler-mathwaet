@@ -39,11 +39,14 @@ title: Betaal Gegevens
         </section>
     
         <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="titel_betaalmethode">Kies een betaalmethode</h2>
+                </div>
+            </div>
+                    
             <div class="row d-flex justify-content-between">
                 <div class="col-12 col-md-4 order-md-last">
-                    <div>
-                        <h2>Kies een betaalmethode</h2>
-                    </div>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <span>Mevr. Mathilde Waeterloos<br>Engelsenlaan 256<br>9600 RONSE<br>België</span>
@@ -91,23 +94,23 @@ title: Betaal Gegevens
                 </div>
             
                 <div class="col-12 col-md-6">
-                    <form>
-                        <div class="custom-control custom-radio">
+                    <form class="form_betaling">
+                        <div class="custom-control custom-radio custom-radio1">
                             <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="customRadio1">
-                                <img src="{{ site.baseurl }}/images/bancontact_kleur.png" alt="bancontact" height="40"><strong>Bancontact</strong> - gratis
+                                <img src="{{ site.baseurl }}/images/bancontact_kleur.png" alt="bancontact" height="20"><strong>Bancontact</strong> - gratis
                             </label>
                         </div>
-                        <div class="custom-control custom-radio">
+                        <div class="custom-control custom-radio custom-radio2">
                             <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="customRadio2">
-                                <img src="{{ site.baseurl }}/images/visa_kleur.png" alt="bancontact" height="10"><strong>Creditcard</strong> - gratis
+                                <img src="{{ site.baseurl }}/images/visa_kleur.png" alt="bancontact" height="20"><strong>Creditcard</strong> - gratis
                             </label>
                         </div>
-                        <div class="custom-control custom-radio">
+                        <div class="custom-control custom-radio custom-radio3 ">
                             <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="customRadio3">
-                                <img src="{{ site.baseurl }}/images/paypal_kleur.png" alt="bancontact" height="15"><strong>Paypal</strong> - gratis
+                                <img src="{{ site.baseurl }}/images/paypal_kleur.png" alt="bancontact" height="20"><strong>Paypal</strong> - gratis
                             </label>
                         </div>
                         <div class="form-row">
@@ -119,7 +122,7 @@ title: Betaal Gegevens
                         <div class="form-row">
                             <div class="form-group col-12 col-md-6">
                                 <label for="inputName2">Kaartnummer*</label>
-                                <input type="text" class="form-control" id="inputName2">
+                                <input type="text" class="input_smalltext form-control " id="inputName2">
                                 <small id="emailHelp" class="form-text text-muted">De cijfers op de voorzijde van de kaart, bijvoorbeeld 67031234567890123.</small>
                             </div>
                         </div>
@@ -144,7 +147,7 @@ title: Betaal Gegevens
                                 <small id="emailHelp" class="form-text text-muted">Vaak op de kaart aangeduid met "Valid thru".</small>
                             </div>
                             <div class="form-group col-4 col-md-2">
-                                <label for="inputDate"></label>
+                                <label class="invisible" for="inputDate">...</label>
                                 <select id="inputDate" class="form-control">
                                     <option selected>jjjj</option>
                                     <option>2019</option>
@@ -166,12 +169,12 @@ title: Betaal Gegevens
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row buttons_gegevens">
                 <div class="col-12 d-flex justify-content-center justify-content-md-start">
-                    <a role="button" class="btn btn-outline-primary btn-lg button-win" data-toggle="modal" data-target="#exampleModal">Betalen</a>
+                    <a role="button" class="btn btn-outline-primary button_blauw" data-toggle="modal" href="" data-target="#exampleModal">Betalen</a>
                 </div>
                 <div class="col-12 d-flex justify-content-center justify-content-md-start">
-                    <a role="button" class="btn btn-outline-primary btn-lg button-win" href="gegevens.html">Terug</a>
+                    <a role="button" class="btn btn-outline-primary button_zwart" href="gegevens.html">Terug</a>
                 </div>
 
                 <!-- Modal -->
