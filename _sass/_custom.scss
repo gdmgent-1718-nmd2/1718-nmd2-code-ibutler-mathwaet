@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 @font-face {font-family:"COCOGOOSE";
-            src:url("../fonts/Cocogoose_trial.eot?") format("eot"),
-            url("../fonts/Cocogoose_trial.woff") format("woff"),
-            url("../fonts/Cocogoose_trial.ttf") format("truetype"),
-            url("../fonts/Cocogoose_trial.svg#COCOGOOSE") format("svg");}
+            src:url("../../fonts/Cocogoose_trial.eot?") format("eot"),
+            url("../../fonts/Cocogoose_trial.woff") format("woff"),
+            url("../../fonts/Cocogoose_trial.ttf") format("truetype"),
+            url("../../fonts/Cocogoose_trial.svg#COCOGOOSE") format("svg");}
 
 
 /*----------------- HOME ------------------*/
@@ -33,9 +33,10 @@
     background-color:white;
     width:100%;
     height:55px;
-    border-radius: 40px;
+    border-radius:50px;
     padding:17px;
     margin-bottom:40px;
+    border-width:0px;
 
     font-family:'COCOGOOSE', sans-serif;
     font-size: 14px;
@@ -53,6 +54,7 @@
             border-width:2px !important;
             border-color:white !important;
             color:white !important;
+            padding:14px;
         }
 }
 
@@ -162,7 +164,7 @@ h1{
     border-width: 2px;
     width:100%;
     height:55px;
-    border-radius: 40px;
+    border-radius: 50px;
     padding:17px;
     margin-bottom:110px;
 
@@ -212,7 +214,7 @@ form{
     background-color:$primary;
     width:100%;
     height:55px;
-    border-radius: 40px;
+    border-radius:50px;
     padding:17px;
     margin-bottom:100px;
 
@@ -249,12 +251,12 @@ form{
 }
 
 h3{
-    font-size:17px;
+    font-size:16px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom:10px;
     color:$primary;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 .garanties{
@@ -270,7 +272,7 @@ h3{
     }
     p{
         font-size:17px;
-        margin-bottom:10px;
+        margin-bottom:8px;
     }
 }
 
@@ -316,7 +318,7 @@ h3{
 }
 
 h2{
-    font-size:17px;
+    font-size:16px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom:20px;
@@ -370,11 +372,6 @@ h2{
         margin-bottom:20px;
         margin-top:40px;
     }
-    .button_zwart_gegevens:hover{
-        border-color:$primary;
-        color:red;
-        background-color:transparent;
-    }
 }
 
 
@@ -392,16 +389,17 @@ h2{
         border-color:white;
         padding-top:15px;
         padding-bottom:15px;
+        font-size:17px;
             h5{
                 font-size:15px;
                 text-transform: uppercase;
                 font-weight: 400;
             }
             small{
-                font-size:15px;
+                font-size:16px;
             }
             .text-muted{
-                font-size:19px;
+                font-size:20px;
             }
             p{
                 margin-bottom:0px;
@@ -468,8 +466,47 @@ form{
 }
 
 
-    
+/*----------------- MODAL ------------------*/    
    
+.modal-title{
+    font-size:17px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.modal-body{
+    font-size:15px;
+        .bigger{
+            font-size:20px;
+        }
+}
+
+.button_modal{
+    background-color:$primary;
+    width:70%;
+    height:50px;
+    border-radius:50px;
+    padding:16px;
+
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:white;
+
+        &:active{
+            background-color:white !important;
+            border-width:2px !important;
+            border-color:$primary !important;
+            color:$primary !important;
+        }
+        &:hover{
+            background-color:white !important;
+            border-width:2px !important;
+            border-color:$primary !important;
+            color:$primary !important;
+            padding:14px;
+        }
+}
 
 
 
@@ -492,9 +529,9 @@ form{
     }
 
     .button_wit{
-        width:290px;
-        height:50px;
-        font-size:12px;
+        width:270px;
+        height:45px;
+        font-size:11px;
         padding:15px;
 
         &:active{
@@ -505,9 +542,9 @@ form{
 
     .social-icons {
         a {
-            max-width: 30px;
+            max-width: 35px;
             svg {
-                width:40px;
+                width:35px;
                 path {
                     fill:white;
                 }
@@ -540,9 +577,9 @@ form{
 
     .button_zwart{
         margin-bottom:150px;
-        width:290px;
-        height:47px;
-        font-size:12px;
+        width:270px;
+        height:45px;
+        font-size:11px;
         padding:14px;
 
         &:active{
@@ -576,10 +613,10 @@ form{
 
     .button_blauw{
         margin-bottom:120px;
-        width:290px;
-        height:47px;
-        font-size:12px;
-        padding:14px;
+        width:270px;
+        height:45px;
+        font-size:11px;
+        padding:15px;
 
         &:active{
             background-color:$primary !important;
@@ -654,7 +691,69 @@ form{
         }
     }
 
+
+
+
+/*----------------- BETALING ------------------*/
+
+    .list-group{
+        .list-group-item{
+            font-size:14px;
+                h5{
+                    font-size:13px;
+                }
+                small{
+                    font-size:14px;
+                }
+                .text-muted{
+                    font-size:17px;
+                }
+                h4{
+                    font-size:16px;
+                }
+            }
+    }
+
+
+/*----------------- MODAL ------------------*/
+
+    .modal-title{
+        font-size:17px;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding-left:20px;
+    }
+    
+    .modal-body{
+        padding-left:40px;
+        padding-right:40px;
+        font-size:15px;
+            .bigger{
+                font-size:18px;
+            }
+    }
+    
+    .button_modal{
+        background-color:$primary;
+        width:50%;
+        height:47px;
+        padding:15px;
+    
+        font-family: 'COCOGOOSE', sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        color:white;
+    
+            &:active{
+                background-color:$primary !important;
+                color:white !important;
+            }
+        }
+   
+   
 }
+
+
 
 
 // Large devices (desktops, 992px and up)
