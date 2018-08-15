@@ -4,7 +4,7 @@
 }
 
 .footer{
-    background-color:#F7F7F7;
+    background-color:#F9F9F9;
         .firstrow_footer{
             padding-top:50px;
                 .logo_happyhouse_footer{
@@ -15,8 +15,9 @@
                     margin-bottom:30px;  
                         a{
                         font-family: 'cocogoose', sans-serif;
+                        text-transform: uppercase;
                         font-weight: 400;
-                        font-size:14px;
+                        font-size:13px;
                         }
                         a:hover{
                             text-decoration:none;
@@ -70,7 +71,7 @@
         max-width: 30px;
         padding:2px;
         svg{
-            width:35px;
+            width:40px;
             path{
                 fill:$primary;
             }
@@ -98,7 +99,7 @@
         background-color:#F7F7F7;
             .firstrow_footer{
                 padding-top:60px;
-                margin-bottom:40px;
+                margin-bottom:30px;
                     .logo_happyhouse_footer{
                         margin-bottom:0px;
                             img{
@@ -109,7 +110,8 @@
                     .linkpages{
                         margin-bottom:0px;
                             a{
-                                font-size:12px;  
+                                font-size:11px;  
+                                text-transform:uppercase;
                             }
                             a:active{
                                 color:$primary;
@@ -119,12 +121,22 @@
             .gegevensfooter{
                 text-align:left;
                 font-size:14px;
-            }               
+            }     
+            .copyright{
+                font-size:12px;
+            }          
     }   
 
     .social-iconsfooter{
-        margin-bottom:0px;
+        a{
+            svg{
+                width:35px;
+            }
         }
+    }
+
+    .social-iconsfooter{
+        margin-bottom:0px;
         a:hover{
             svg{
                 path{
@@ -132,6 +144,9 @@
                 }
             }
         }
+    }
+    
+    .social-iconsfooter{
         a:active{
             svg{
                 path{
@@ -140,9 +155,8 @@
             }
         }
     }
-    
 
-
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {}
 

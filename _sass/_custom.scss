@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 @font-face {font-family:"COCOGOOSE";
             src:url("../../fonts/Cocogoose_trial.eot?") format("eot"),
@@ -90,7 +90,7 @@
     }
 
 .breadcrumb{
-    height:45px;
+    height:40px;
     margin-top:80px;
     margin-bottom:70px;
     background-color:#F2F2F2;
@@ -204,6 +204,9 @@ form{
         label{
             margin-bottom:5px;
         }
+        .labeldate{
+            width:150px;
+        }
         .form-control{
             margin-bottom:20px;
         }
@@ -237,7 +240,8 @@ form{
         }
 }
 
-.img_kaart{
+#mymap{
+    height:350px;
     width:100vw;
 }
 
@@ -441,11 +445,16 @@ h2{
         .custom-control-label{
             padding-left:10px;
                 img{
-                    height:15px;
                     padding-right:10px;
+                } 
+                .payment_bancontact{
+                    height:25px;
+                }  
+                .payment_paypal{
+                    height:15px;
                 }
-                img:first-of-type{
-                    height:20px;
+                .payment_creditcard{
+                    height:15px;
                 }
         }
     }
@@ -520,12 +529,12 @@ form{
 @media (min-width: 768px) {
 
     img.logo_happyhouse_banner{
-        margin-top:250px;
-        height:280px;
+        margin-top:240px;
+        height:260px;
     }
 
     .row_button_icons{
-        margin-top:650px;
+        margin-top:640px;
     }
 
     .button_wit{
@@ -714,7 +723,22 @@ form{
             }
     }
 
-
+    .form_betaling{
+        margin-bottom:20px;
+        .custom-radio{
+            .custom-control-label{
+                    .payment_bancontact{
+                        height:20px;
+                    }  
+                    .payment_paypal{
+                        height:12px;
+                    }
+                    .payment_creditcard{
+                        height:12px;
+                    }
+            }
+        }
+    }
 /*----------------- MODAL ------------------*/
 
     .modal-title{
