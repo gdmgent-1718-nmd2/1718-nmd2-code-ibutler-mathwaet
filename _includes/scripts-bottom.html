@@ -3,46 +3,31 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 <script>
-
-
-// ES6 IIFE,
-// zo start je een Javascript bestand zodat het begint wanneer
-// de pagina klaar is met laden.
 (() => {
-    // Je maakt een variabele dat je kaart omvat en linkt deze aan
-    // de Map ID, je zet de coordinaten waarop de pagina zal centreren en ZoomLevel (13 is standaard)
     let MyMap = L.map('mymap').setView([50.7464,3.6209439], 15);
 
-    // Je stelt hier de instellingen voor de kaart in en voegt
-    // deze toe aan je Kaart variabele.
-    // Zie documentatie van leaflet voor instellingen.
-    // Ga naar https://www.mapbox.com/studio/ om je stijl te maken
-    // van de kaart. Markers hoef je hier niet in te stellen. 
-    // Gewoon kleuren veranderen is voldoende. 
-    // Daar krijg je uitleg over wat je hier beneden moet invullen.
-
-    // Deze link dat je bij tileLayer moet invullen krijg je zo:
-    // Ga naar je gemaakte stijl > Share & Use > Use: Third Party > CARTO, die link plak je hier.
     L.tileLayer('https://api.mapbox.com/styles/v1/mathwaet/cjkv2vred06zt2rny3rj078y7/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWF0aHdhZXQiLCJhIjoiY2prdjJ0bmF2MGwybTN2bGtoem5mcDkyayJ9.6tXaBD5_pCZDt_zxXVTF9w', 
     {
         attribution: '',
         maxZoom: 18,
-        // Hier vind je u accessToken: https://www.mapbox.com/account/
-        // Je moet een public token hebben. Die plak je hier.
         accessToken: 'pk.eyJ1IjoibWF0aHdhZXQiLCJhIjoiY2prdjJ0bmF2MGwybTN2bGtoem5mcDkyayJ9.6tXaBD5_pCZDt_zxXVTF9w'
+        
     }).addTo(MyMap);
 
-    // Voor je een marker toevoegt definieer je een eigen marker:
     let CustomIconName = L.icon({
         iconUrl: './images/markerlogo.png',
     
-        iconSize:     [30, 40], // size of the icon
-        iconAnchor:   [0, 0], // point of the icon which will correspond to marker's location
+        iconSize:     [30, 40],
+        iconAnchor:   [0, 0],
     });
-    // Nadat je dit allemaal hebt gedaan kan je een marker toevoegen.
-    // Gebruik de coordinaten van de exacte locatie. En voeg deze marker
-    // toe aan jouw kaart. MyMap in dit geval.
     let YourMarker = L.marker([50.7464,3.6209439], {icon: CustomIconName}).addTo(MyMap);
 })()
 
+</script>
+
+<script>
+    $('.datepicker').datepicker({
+    format: 'mm/dd/yyyy',
+    startDate: '-3d'
+});
 </script>

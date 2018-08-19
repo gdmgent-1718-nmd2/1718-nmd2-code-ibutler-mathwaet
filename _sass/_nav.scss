@@ -1,6 +1,6 @@
 .navbar{
     background:rgba(255,255,255,0.94);
-    z-index:2;
+    z-index:9999999;
 }
 .navbar-brand{
     padding-right:10px;
@@ -70,6 +70,14 @@
     .navbar-light .navbar-nav .nav-link:active{
         color:$primary;
     }
+
+    .navbar-expand-lg { 
+         .navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+         }
+    }
+
 }
 
 // Large devices (desktops, 992px and up)
